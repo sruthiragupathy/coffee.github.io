@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Coffee King</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    
+    
+
+    
+</head>
+<body ">
+    
+
+     <!-- Modal Trigger -->
+     <section class="fnavbar">
+     <nav class="nav-fixed">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo" style="padding-left:25px;font-family: 'Pacifico', cursive;">CafeKing</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><i class="tiny material-icons">home</i></li>
+            <li> 
+                <a href="#" onclick="toggleModal();">Home</a>
+            </li>
+            <li><i class="tiny material-icons">people</i></li>
+            <li><a href="#" onclick="toggleModal();">About Us!</a></li>
+            <li><i class="tiny material-icons">local_dining</i></li>
+            <li><a href="#" onclick="toggleModal();">Coffee</a></li>
+            <li><i class="tiny material-icons">star</i></li>
+            <li><a href="#" onclick="toggleModal();">stories and News</a></li>
+            <li><i class="tiny material-icons">contacts</i></li>
+            <li><a href="#" onclick="toggleModal();">Contact</a></li>
+          </ul>
+        </div>
+        
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+            <li><a href="#" onclick="toggleModal();">Home</a></li>
+            <li><a href="#" onclick="toggleModal();">About Us!</a></li>
+            <li><a href="#" onclick="toggleModal();">Coffee</a></li>
+            <li><a href="#" onclick="toggleModal();">Surprise</a></li>
+            <li><a href="#" onclick="toggleModal();">Contact</a></li>
+      </ul>
+      </section>
+     <section class="fslider">
+         <div class="slider">
+             <ul class="slides">
+                 <li><img style="filter:brightness(45%)" src="images/banner1.jpeg" alt="banner1" ">
+                 <div class="caption center-align white-text">
+                     <h3>CafeKing - Quality Cafe</h3>
+                     <h5 class="light text-lighten-3">We serve one of the best coffees around!</h5>
+                 </div>
+                 </li>
+                 <li><img style="filter:brightness(40%)" src="images/banner3.jpg" alt="banner1" ">
+                    <div class="caption center-align white-text">
+                        <h3>CafeKing - Finnest Cafe</h3>
+                        <h5 class="light text-lighten-3">We serve one of the best coffees around!</h5>
+                    </div>
+                 </li>
+                 <li><img style="filter:brightness(40%)" src="images/banner4.jpg" alt="banner1" ">
+                    <div class="caption center-align white-text">
+                        <h3>CafeKing - Espresso yourself</h3>
+                        <h5 class="light text-lighten-3">We serve one of the best coffees around!</h5>
+                    </div>
+                 </li>
+             </ul>
+         </div>
+     </section>
+     <section class="descrip">
+         <div class="section white center">
+             <h2 class="header">Cafe-King-Ultimate Quality Coffee</h2>
+             <!-- <div class="row container center">
+                 <div class="col center l8 s12"></div>
+                 <div class="col center l4 s12">
+                     <img 
+                     src="images/coffee.jpg" 
+                     alt=" " style="object-fit: contain;"
+                     height="200" 
+                     width="200">
+                 </div>
+
+             </div> -->
+             <div class="row container center">
+                <div class="col l8 s12" style="margin-bottom: 40px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, maxime, natus doloribus velit illum exercitationem ratione quaerat, architecto obcaecati ut repudiandae nihil qui dolorum? Tenetur commodi, natus inventore ut illo dolor hic delectus, distinctio nisi optio eligendi dolore quia officia illum voluptas quibusdam nam minus alias! Vero, iste deserunt minus ad fugiat consequuntur porro iure nesciunt totam sapiente omnis veniam quis quibusdam? Sequi asperiores perferendis sint eum, expedita quis nihil quos consequuntur sit, sed quasi quo quas labore tenetur porro obcaecati ullam veritatis id a laboriosam eveniet tempora fuga alias. Veritatis debitis quas dicta id, iusto tempora cumque reiciendis fugit!</div>
+                <div class="col l4 s12">
+                    <img 
+                    src="images/coffee.jpg" 
+                    alt=" " style="object-fit: contain;"
+                    height="200" 
+                    width=auto>
+                </div>
+               
+              </div>
+         </div>
+     </section>
+     <section class="fcards">
+         <div class="row" style="padding-left:50px;padding-right: 50px;">
+            <div class="col s12 m12 l4" style="padding-left: 50px; padding-right: 5px;">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/banner1.jpeg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Cappucino<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Cappucino<i class="material-icons right">close</i></span>
+                      <p>The name comes from the Capuchin friars, referring to the colour of their habits,and in this context referring to the colour of the beverage when milk is added in small portion to dark, brewed coffee (today mostly espresso). The physical appearance of a modern cappuccino with espresso créma and steamed milk is a result of a long evolution of the drink.</p>       </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4" style="padding-left: 50px; padding-right: 5px;">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/latte.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Coffee Latte<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Coffee Latte<i class="material-icons right">close</i></span>
+                      <p>Caffe latte (or simply latte) is a coffee drink made with espresso and steamed milk. The word comes from the Italian caffè e latte [kafˌfɛ e ˈlatte], caffelatte [kaffeˈlatte] or caffellatte [kaffelˈlatte], which means "coffee & milk". </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4" style="padding-left: 50px; padding-right: 5px;">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/hotchoc.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Mocha Coffee<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Mocha Cafe<i class="material-icons right">close</i></span>
+                      <p>A caffè mocha , also called mocaccino (Italian: [mokatˈtʃiːno]), is a chocolate-flavoured variant of a caffè latte (Italian: [kafˈfɛ ˈlatte]). Other commonly used spellings are mochaccino and also mochachino. The name is derived from the city of Mocha, Yemen,[citation needed] which was one of the centers of early coffee trade.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l8" style="padding-left: 50px; padding-right: 5px;"></div>
+        </div>
+
+     </section>
+     <section lass="fparallax">
+        <div class="parallax-container">
+            <div class="parallax"><img style="min-height:280px ; filter:brightness(80%)" src="images/caro2.jpeg" height="auto" ></div>
+        </div>
+     </section>
+     <section class="about">
+         <div class="section white center content">
+         <div class="row container center">
+             <h2 class="header">About Us</h2>
+             <p class="grey-text text-darken-3">We’re not just passionate purveyors of coffee, but everything else that goes with a full and rewarding coffeehouse experience. We also offer a selection of premium teas, fine pastries and other delectable treats to please the taste buds. And the music you hear in store is chosen for its artistry and appeal.Our mission to inspire and nurture the human spirit – one person, one cup, and one neighborhood at a time.Every day, we go to work hoping to do two things: share great coffee with our friends and help make the world a little better.</p>
+             <a href="#" class="btn waves-effect" onclick="toggleModal();" style="background-color: #6f4037;">Read More</a>
+         </div>
+        </div>
+     </section>
+     <section class="fservices">
+         <div class="row" style="padding-left:50px";padding-right:50px>
+            <div class="col s12 l4 center" style="padding:50px">
+                <i class="large material-icons" style="color:#6f4037">local_dining</i>
+                <h5 class="header">Varieties of coffee</h5>
+            </div>
+            <div class="col s12 l4 center" style="padding:50px">
+                <i class="large material-icons" style="color:#6f4037">watch_later</i>
+                <h5 class="header">Round the Clock</h5></div>
+            <div class="col s12 l4 center" style="padding:50px">
+                <i class="large material-icons" style="color:#6f4037">favorite</i>
+                <h5 class="header">Favourites</h5>
+            </div>
+        </div>
+     </section>
+     <section class="freviews">
+         <div class="content center white">
+             <h3 class="header">What our customers say!</h3>
+             <div class="carousel myreviews" style="margin-bottom: 30px;">
+             <a href="#" class="carousel-item">
+                 <div class="row">
+                     <div class="col s12">
+                         <div class="card-panel" style="background-color:#6f4037">
+                             <span class="white-text">One Review</span>
+                             <p class="white-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, dolorem. Qui aut facilis temporibus neque alias veniam unde dolore velit?</p>
+                         </div>
+                     </div>
+                 </div>
+             </a>
+             <a href="#" class="carousel-item">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel" style="background-color:#6f4037">
+                            <span class="white-text">One Review</span>
+                            <p class="white-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, dolorem. Qui aut facilis temporibus neque alias veniam unde dolore velit?</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="carousel-item">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel" style="background-color:#6f4037">
+                            <span class="white-text">One Review</span>
+                            <p class="white-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, dolorem. Qui aut facilis temporibus neque alias veniam unde dolore velit?</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="carousel-item">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel" style="background-color:#6f4037">
+                            <span class="white-text">One Review</span>
+                            <p class="white-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, dolorem. Qui aut facilis temporibus neque alias veniam unde dolore velit?</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="carousel-item">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel" style="background-color:#6f4037">
+                            <span class="white-text">One Review</span>
+                            <p class="white-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, dolorem. Qui aut facilis temporibus neque alias veniam unde dolore velit?</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="carousel-item">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel" style="background-color:#6f4037">
+                            <span class="white-text">One Review</span>
+                            <p class="white-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, dolorem. Qui aut facilis temporibus neque alias veniam unde dolore velit?</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="carousel-item">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel" style="background-color:#6f4037">
+                            <span class="white-text">One Review</span>
+                            <p class="white-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, dolorem. Qui aut facilis temporibus neque alias veniam unde dolore velit?</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+             </div> 
+         </div>
+     </section>
+     <section class="ffooter">
+         <footer style="background-color:#6f4037">
+         <div class="row" >
+             <div class="col s12 l6">
+                 <h4 class="white-text header">Contact us</h4>
+                 <p class="white-text"><i class="material-icons tiny" style="padding:10px;">home</i>12,ABC street,Delhi</p>
+                 <p class="white-text"><i class="material-icons tiny" style="padding:10px;">call</i>91 9842791199</p>
+             </div>
+             <div class="col s12 l6">
+                <h4 class="white-text header">Social Media</h4>
+                <p><a href="#" class="white-text">Facebook</a></p>
+                <p><a href="#" class="white-text">Instagram</a></p>
+                <p><a href="#" class="white-text">Twitter</a></p>
+            </div>
+         </div>
+         <div class="row" style="background-color:#462822">
+            <div class="col s12 l6">
+                <p class="white-text">&copy;CafeKing</p>
+            </div>
+            <div class="col s12 l6">
+                <p class="white-text" style="float:right;padding-right:20px;">Designed by Sruthiragupathy</p>
+            </div>
+        </div>
+        <footer></footer>
+     </section>
+
+  <!-- Modal Structure -->
+  <section>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Link Disabled</h4>
+      <p>Sorry!The link doesn't work as of now</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  </section>
+  </body>
+
+</body>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/loader.js"></script>
+
+</html> 
